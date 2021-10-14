@@ -58,21 +58,21 @@
             <ul class="comfort-filter-list">
               <li class="comfort-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="Pool" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="comfort-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="Parking" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="comfort-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-Fi</span>
                 </label>  
@@ -133,7 +133,7 @@
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярные</option>
-            <option value="cheap">Сначала дешёвые</option>
+            <option value="cheap" selected>Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
           <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
@@ -343,16 +343,16 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
+          <form action="https://echo.htmlacademy.ru/" method="POST">
+            <span class="page-info">Гостиниц на странице:</span>
+            <select name="number-of-pages">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+            </select>
+          </form>
         </div>
-        <form action="https://echo.htmlacademy.ru/" method="POST">
-          <span class="page-info">Гостиниц на странице:</span>
-          <select name="number-of-pages">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4" selected>4</option>
-          </select>
-        </form>
       </section>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
