@@ -1,0 +1,62 @@
+.navigation-user {
+    background-image: url("/img/index/search.svg");
+    background-repeat: no-repeat;
+}
+.chosen {
+    background-image: url("/img/index/favorites.svg");
+    background-repeat: no-repeat;
+}
+.house {
+    background-image: url("/img/index/house.jpg");
+    background-repeat: no-repeat;
+    background-position: 440 832;
+}
+.icon-house {
+    background-image: url("/img/index/icon-house.svg");
+    background-repeat: no-repeat;
+}
+.icon-eat {
+    background-image: url("/img/index/icon-eat.svg");
+    background-repeat: no-repeat;
+}
+.souvenir {
+    background-image: url("/img/index/icon-souvenir.svg");
+    background-repeat: no-repeat;
+}
+.canyon {
+    background-image: url("/img/index/canyon.jpg");
+    background-repeat: no-repeat;
+}
+.background-footer {
+    background-image: url("/img/index/background-footer.jpg");
+    background-repeat: no-repeat;
+}
+.twitter{
+    background-image: url("/img/index/social-twitter.svg");
+    background-repeat: no-repeat;
+}
+.facebook {
+    background-image: url("/img/index/social-facebook.svg");
+    background-repeat: no-repeat;
+}
+.youtube {
+    background-image: url("/img/index/social-youtube.svg");
+    background-repeat: no-repeat;
+}
+.arrow {
+    background-image: url("/img/hotels/arrow.svg");
+    background-repeat: no-repeat;
+    background-color: brown;
+}
+.mode-tile {
+    background-image: url("/img/hotels/mode-tile.svg");
+    background-repeat: no-repeat;
+}
+.mode-slideshow {
+    background-image: url("/img/hotels/mode-slideshow.svg");
+    background-repeat: no-repeat;
+}
+.mode-list {
+    background-image: url("/img/hotels/mode-list.svg");
+    background-repeat: no-repeat;
+}
