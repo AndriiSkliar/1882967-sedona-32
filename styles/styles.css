@@ -38,8 +38,6 @@ body {
     border-radius: 4px;
     color: #FFFFFF;
     display: inline-block;
-    width: 160px;
-    height: 37px;
 }
 .acquaintance h2 {
     font-weight: 700;
@@ -113,8 +111,6 @@ body {
     background-color: #756257;
     border-radius: 10px;
     display: inline-block;
-    width: 575px;
-    height: 60px;
     text-decoration: none;
 }
 .newsletter {
@@ -137,8 +133,6 @@ body {
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     display: inline-block;
-    width: 600px;
-    height: 60px;
     font-size: 18px;
     line-height: 26px;
 }
@@ -150,15 +144,11 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #83B3D3;
-    border-radius: 0px 10px 10px 0px;
     display: inline-block;
-    width: 200px;
-    height: 60px;
 }
 .page-footer {
     background-color: #FFFFFF;
     display: inline-block;
-    height: 120px;
 }
 .contacts-address {
     text-decoration: none;
@@ -212,8 +202,6 @@ body {
     background-color: #83B3D3;
     border-radius: 4px;
     display: inline-block;
-    width: 160px;
-    height: 48px;
 }
 .button-reset {
     font-weight: normal;
@@ -265,8 +253,6 @@ body {
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
-    width: 151px;
-    height: 37px;
 }
 .favorites {
     font-size: 16px;
@@ -276,8 +262,6 @@ body {
     background-color: #83B3D3;
     border-radius: 4px;
     display: inline-block;
-    width: 160px;
-    height: 37px;
 }
 .rating {
     font-weight: normal;
@@ -288,8 +272,6 @@ body {
     background-color: #E5E5E5;
     border-radius: 4px;
     display: inline-block;
-    width: 160px;
-    height: 37px;
 }
 .favorites-green {
     font-size: 16px;
@@ -299,17 +281,6 @@ body {
     background-color: #7DB54F;
     border-radius: 4px;
     display: inline-block;
-    width: 160px;
-    height: 37px;
-}
-.divider {
-    border-top: 1px solid #E6E6E6;
-    width: 1056px;
-}
-.divider-top-bottom {
-    border-top: 1px solid #E6E6E6;
-    border-bottom: 1px solid #E6E6E6;
-    width: 1056px;
 }
 .pagination-show-more {
     font-size: 20px;
@@ -320,8 +291,6 @@ body {
     background-color: #83B3D3;
     border-radius: 4px;
     display: inline-block;
-    width: 625px;
-    height: 55px;
 }
 .pagination-item {
     font-size: 20px;
@@ -331,8 +300,6 @@ body {
     background-color: #83B3D3;
     border-radius: 4px;
     display: inline-block;
-    width: 55px;
-    height: 55px;
 }
 .pagination-link {
     text-decoration: none;
@@ -349,8 +316,6 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     display: inline-block;
-    width: 160px;
-    height: 48px;
     background-color: #F2F2F2;
 }
 .page-info {
@@ -373,87 +338,81 @@ body {
 
                                                 /*картинки*/
 .navigation-user {
-    background-image: url("/img/index/search.svg");
+    background-image: url("../img/index/search.svg");
     background-repeat: no-repeat;
 }
 .chosen {
-    background-image: url("/img/index/favorites.svg");
+    background-image: url("../img/index/favorites.svg");
     background-repeat: no-repeat;
 }
 .house {
-    background-image: url("/img/index/house.jpg");
+    background-image: url("../img/index/house.jpg");
     background-repeat: no-repeat;
 }
 .icon-house {
-    background-image: url("/img/index/icon-house.svg");
+    background-image: url("../img/index/icon-house.svg");
     background-repeat: no-repeat;
 }
 .icon-eat {
-    background-image: url("/img/index/icon-eat.svg");
+    background-image: url("../img/index/icon-eat.svg");
     background-repeat: no-repeat;
 }
 .souvenir {
-    background-image: url("/img/index/icon-souvenir.svg");
+    background-image: url("../img/index/icon-souvenir.svg");
     background-repeat: no-repeat;
 }
 .canyon {
-    background-image: url("/img/index/canyon.jpg");
+    background-image: url("../img/index/canyon.jpg");
     background-repeat: no-repeat;
 }
 .background-footer {
-    background-image: url("/img/index/background-footer.jpg");
+    background-image: url("../img/index/background-footer.jpg");
     background-repeat: no-repeat;
 }
 .twitter{
-    background-image: url("/img/index/social-twitter.svg");
+    background-image: url("../img/index/social-twitter.svg");
     background-repeat: no-repeat;
 }
 .facebook {
-    background-image: url("/img/index/social-facebook.svg");
+    background-image: url("../img/index/social-facebook.svg");
     background-repeat: no-repeat;
 }
 .youtube {
-    background-image: url("/img/index/social-youtube.svg");
+    background-image: url("../img/index/social-youtube.svg");
     background-repeat: no-repeat;
 }
 .arrow {
-    background-image: url("/img/hotels/arrow.svg");
+    background-image: url("../img/hotels/arrow.svg");
     background-repeat: no-repeat;
 }
 .mode-tile {
-    background-image: url("/img/hotels/mode-tile.svg");
+    background-image: url("../img/hotels/mode-tile.svg");
     background-repeat: no-repeat;
     border: 2px solid #E6E6E6;
     background-position: center;
     box-sizing: border-box;
     border-radius: 4px;
     display: inline-block;
-    width: 48px;
-    height: 48px;
 }
 .mode-slideshow {
-    background-image: url("/img/hotels/mode-slideshow.svg");
+    background-image: url("../img/hotels/mode-slideshow.svg");
     background-repeat: no-repeat;
     border: 2px solid #E6E6E6;
     background-position: center;
     box-sizing: border-box;
     border-radius: 4px;
     display: inline-block;
-    width: 48px;
-    height: 48px;
 }
 .mode-list {
-    background-image: url("/img/hotels/mode-list.svg");
+    background-image: url("../img/hotels/mode-list.svg");
     background-repeat: no-repeat;
     border: 2px solid #E6E6E6;
     background-position: center;
     box-sizing: border-box;
     border-radius: 4px;
     display: inline-block;
-    width: 48px;
-    height: 48px;
 }
 .filter {
-    background-image: url("/img/hotels/catalog-background.jpg");
+    background-image: url("../img/hotels/catalog-background.jpg");
     background-repeat: no-repeat;
 }
