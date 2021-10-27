@@ -12,12 +12,31 @@
     src: url("/fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+  }
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     background-color: #FFFFFF;
     color: #000000;
+}
+.navigation {
+    display: flex;
+    width: 1200px;
+  }
+.navigation-container-1 {
+    width: 309px;
+    margin-right: 150px;
+}
+.navigation-container-3 {
+    width: 160px;
+    margin-left: auto;
 }
 .navigation-link {
     font-size: 20px;
@@ -27,6 +46,13 @@ body {
     text-decoration: none;
     color: inherit;
 }
+.navigation-list {
+    margin: 0;
+    padding: 0;
+  }
+.main-container {
+    flex-grow: 1;
+  }
 .show-more {
     font-size: 16px;
     line-height: 21px;
@@ -53,6 +79,10 @@ body {
     text-align: center;
     color: #333333;
 }
+.advantages-container {
+    width: 1200px;
+    display: flex;
+}
 .advantages-list {
     font-weight: 400;
     font-size: 18px;
@@ -70,6 +100,7 @@ body {
 }
 .advantages-item {
     background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
 }
 .advantages-description {
     font-size: 18px;
@@ -97,6 +128,7 @@ body {
     background-color: #FFFFFF;
     font-size: 30px;
     line-height: 36px;
+    width: 1200px;
 }
 .date-of-travel {
     font-weight: 400;
@@ -117,6 +149,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     background-color: #000000;
+    width: 1200px;
 }
 .newsletter-title {
     font-weight: bold;
@@ -149,6 +182,19 @@ body {
 .page-footer {
     background-color: #FFFFFF;
     display: inline-block;
+}
+.page-footer-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+}
+.footer-social {
+    width: 107px;
+    margin-right: 61px;
+}
+.logo-htmlacademy {
+    width: 115px;
+    margin-left: auto;
 }
 .contacts-address {
     text-decoration: none;
@@ -348,6 +394,7 @@ body {
 .house {
     background-image: url("../img/index/house.jpg");
     background-repeat: no-repeat;
+    width: 800px;
 }
 .icon-house {
     background-image: url("../img/index/icon-house.svg");
@@ -364,6 +411,7 @@ body {
 .canyon {
     background-image: url("../img/index/canyon.jpg");
     background-repeat: no-repeat;
+    width: 800px;
 }
 .background-footer {
     background-image: url("../img/index/background-footer.jpg");
