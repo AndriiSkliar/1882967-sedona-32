@@ -30,12 +30,10 @@ body {
     display: flex;
     width: 1200px;
   }
-.navigation-container-1 {
-    width: 309px;
+.navigation-container-menu {
     margin-right: 150px;
 }
-.navigation-container-3 {
-    width: 160px;
+.navigation-container-others {
     margin-left: auto;
 }
 .navigation-link {
@@ -189,7 +187,6 @@ body {
     width: 1200px;
 }
 .footer-social {
-    width: 107px;
     margin-right: 61px;
 }
 .logo-htmlacademy {
