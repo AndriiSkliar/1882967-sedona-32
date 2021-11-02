@@ -16,19 +16,29 @@ html {
     height: 100%;
   }
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    background-color: #E5E5E5;
+}
+.box-shadow {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #FFFFFF;
     color: #000000;
+    border-right: 40px solid #F2F2F2;
+    border-left: 40px solid #F2F2F2;
 }
 .navigation {
     display: flex;
-    width: 1200px;
   }
 .navigation-container-menu {
     margin-right: 150px;
@@ -78,7 +88,6 @@ body {
     color: #333333;
 }
 .advantages-container {
-    width: 1200px;
     display: flex;
 }
 .advantages-list {
@@ -126,7 +135,6 @@ body {
     background-color: #FFFFFF;
     font-size: 30px;
     line-height: 36px;
-    width: 1200px;
 }
 .date-of-travel {
     font-weight: 400;
@@ -147,7 +155,6 @@ body {
     text-align: center;
     color: #FFFFFF;
     background-color: #000000;
-    width: 1200px;
 }
 .newsletter-title {
     font-weight: bold;
@@ -184,7 +191,6 @@ body {
 .page-footer-container {
     display: flex;
     margin: 0 auto;
-    width: 1200px;
 }
 .footer-social {
     margin-right: 61px;
@@ -220,7 +226,6 @@ body {
 .comfort-filter {
     display: flex;
     margin: 0 auto;
-    width: 1200px;
 }
 .comfort-filter:first-child {
     margin-right: auto;
@@ -280,7 +285,6 @@ body {
     color: #000000;
     display: flex;
     margin: 0 auto;
-    width: 1200px;
     align-items: center
 }
 .catalog-left-column {
@@ -295,7 +299,6 @@ body {
 .catalog-column {
     display: flex;
     margin: 0 auto;
-    width: 1200px;
 }
 .divider {
     display: flex;
@@ -372,11 +375,9 @@ body {
     display: inline-block;
 }
 .divider-top-bottom {
-    width: 1200px;
     text-align: center;
 }
 .pagination-column {
-    width: 1200px;
     display: flex;
     margin: 0 auto;
 }
@@ -431,7 +432,6 @@ body {
     text-align: center;
     color:  #000000;
     background-color: #F2F2F2;
-    width: 1200px;
 }
 .newsletter-catalog p {
     color: #333333;
@@ -522,5 +522,4 @@ body {
 .filter {
     background-image: url("../img/hotels/catalog-background.jpg");
     background-repeat: no-repeat;
-    width: 1200px;
 }
