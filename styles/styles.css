@@ -63,11 +63,11 @@ ul, ol {
 }
 
 .navigation-container-menu {
-    width: 44%;
+    width: 42%;
 }
 
 .navigation-container-logo {
-    width: 12%;
+    width: 16%;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ ul, ol {
 }
 
 .navigation-container-others {
-    width: 44%;
+    width: 42%;
     display: flex;
     justify-content: flex-end;
 }
