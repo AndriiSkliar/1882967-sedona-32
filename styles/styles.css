@@ -511,6 +511,8 @@ ul, ol {
 .catalog {
     background-color: #FFFFFF;
     color: #000000;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .catalog-info {
@@ -645,13 +647,13 @@ ul, ol {
 
 .divider-top-bottom {
     text-align: center;
-    padding: 30px 287px;
+    padding: 30px 215px;
 }
 
 .pagination-column {
     display: flex;
     margin: 0 auto;
-    padding: 31px 71px 0;
+    padding-top: 31px;
     align-items: center;
 }
 
