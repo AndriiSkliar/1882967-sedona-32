@@ -73,6 +73,10 @@ ul, ol {
     justify-content: center;
 }
 
+.logo-svg {
+    display: block;
+}
+
 .bord {
     margin-top: -5px;
     margin-bottom: 63px;
