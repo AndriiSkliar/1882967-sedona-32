@@ -160,7 +160,45 @@ ul, ol {
 }
 
 .advantages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
+
+.canyon .cornflowerblue-color {
+    grid-column: 3/4;
+}
+
+.advantage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
+
+.advantage-item {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 184px;
+}
+
+.advantage-item h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.advantage-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.advantage-description {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 92px;
 }
 
 .advantages-list {
@@ -185,20 +223,43 @@ ul, ol {
     width: 400px;
 }
 
+.advantages-item h3,p {
+    margin: 0;
+    padding: 0;
+}
+
+.cornflowerblue-color {
+    background-color: #83B3D3;
+    color: #FFFFFF;
+}
+
+.advantages-item {
+    padding-top: 98px;
+    padding-bottom: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages-item h3 {
+    margin-bottom: 29px;
+}
+
+.advantages-nomber {
+    margin-bottom: 31px;
+}
+
 .advantages-description {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
     text-transform: none;
+    width: 250px;
+    height: 73px;
 }
 
 .white-color {
     color: #FFFFFF;;
-}
-
-.cornflowerblue-color {
-    background-color:#83B3D3;
-    color: #FFFFFF;
 }
 
 .background-color {
@@ -561,15 +622,40 @@ ul, ol {
 .catalog-column {
     display: flex;
     margin: 0 auto;
+    padding: 30px 0;
+    border-top: 1px solid #E6E6E6;
+}
+
+.catalog-column:last-child {
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .divider {
-    display: flex;
-    margin-right: auto;
+    display: grid;
+    grid-template-columns: 217px 159px 160px 361px;
+    grid-template-rows: 31px 54px 37px;
+}
+
+.hotels-card-link {
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    display: block;
 }
 
 .rating-column {
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: 160px;
+    grid-template-rows: 17px 63px 37px;
+}
+
+.rating-column div:first-child {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+}
+
+.rating-column div:last-child {
+    grid-row: 3/4;
 }
 
 .list-of-hotels {
@@ -599,12 +685,20 @@ ul, ol {
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+    margin: 0;
 }
 
 .type, .type-price {
     line-height: 23px;
     color: #333333;
     font-weight: normal;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: 151px 160px ;
+    grid-template-rows: 54px 37px;
+    column-gap: 8px;
 }
 
 .more-details {
@@ -615,7 +709,9 @@ ul, ol {
     background-color: #756257;
     border-radius: 4px;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .favorites {
@@ -625,7 +721,9 @@ ul, ol {
     color: #FFFFFF;
     background-color: #83B3D3;
     border-radius: 4px;
-    display: inline-block;
+    display: block;
+    padding: 0;
+    border: 0;
 }
 
 .rating {
@@ -636,7 +734,11 @@ ul, ol {
     color: #333333;
     background-color: #F2F2F2;
     border-radius: 4px;
-    display: inline-block;
+    display: block;
+    width: 160px;
+    height: 37px;
+    box-sizing: border-box;
+    padding-top: 9px;
 }
 
 .favorites-green {
@@ -646,12 +748,19 @@ ul, ol {
     color: #FFFFFF;
     background-color: #7DB54F;
     border-radius: 4px;
-    display: inline-block;
+    display: block;
+    padding: 0;
+    border: 0;
 }
 
 .divider-top-bottom {
     text-align: center;
     padding: 30px 215px;
+}
+
+.divider div:last-child {
+    grid-column: 2/4;
+    grid-row: 1/4;
 }
 
 .pagination-column {
@@ -761,7 +870,6 @@ ul, ol {
 .house {
     background-image: url("../img/index/house.jpg");
     background-repeat: no-repeat;
-    width: 800px;
 }
 
 .icon-house {
@@ -782,7 +890,6 @@ ul, ol {
 .canyon {
     background-image: url("../img/index/canyon.jpg");
     background-repeat: no-repeat;
-    width: 800px;
 }
 
 .background-footer {
