@@ -90,12 +90,44 @@ ul, ol {
 }
 
 .navigation-link {
+    position: relative;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
     color: inherit;
+}
+
+.navigation-icon {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #000000;
+    display: block;
+    margin: auto 24;
+}
+
+.chosen {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7DB54F;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    transform: translate(13px, -27px);
 }
 
 .navigation-list {
@@ -112,6 +144,18 @@ ul, ol {
 
 .main-container {
     flex-grow: 1;
+}
+
+.navigation-user li:first-child {
+    margin: auto 10px;
+    display: block;
+    width: 18px;
+}
+
+.navigation-user li:last-child {
+    margin: auto 33px auto 11px;
+    display: block;
+    width: 18px;
 }
 
 .show-more {
@@ -380,11 +424,12 @@ ul, ol {
     color: #FFFFFF;
     background-color: #83B3D3;
     border-radius: 0px 10px 10px 0px;
-    display: block;
+    display: inline-block;
     padding: 0;
     border: 0;
     width: 200px;
     height: 60px;
+    cursor: pointer;
 }
 
 .page-footer {
@@ -412,12 +457,31 @@ ul, ol {
 }
 
 .footer-social-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
 }
 
-.footer-social-item:nth-child(3n) {
+.ooter-social-link:nth-child(3n) {
     margin-right: 0;
+}
+
+.footer-social-link {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 40px;
+}
+
+.twitter{
+    background-image: url("../img/index/social-twitter.svg");
+}
+
+.facebook {
+    background-image: url("../img/index/social-facebook.svg");
+}
+
+.youtube {
+    background-image: url("../img/index/social-youtube.svg");
 }
 
 .contacts {
@@ -528,6 +592,11 @@ ul, ol {
 .button-submit, .button-reset {
     border: 0;
     padding: 0;
+    cursor: pointer;
+}
+
+.range-toggle {
+    cursor: pointer;
 }
 
 .button-submit {
@@ -725,6 +794,7 @@ ul, ol {
     display: block;
     padding: 0;
     border: 0;
+    cursor: pointer;
 }
 
 .rating {
@@ -792,6 +862,7 @@ ul, ol {
     padding: 0;
     width: 625px;
     height: 55px;
+    cursor: pointer;
 }
 
 .pagination {
@@ -858,34 +929,33 @@ ul, ol {
 
 
                                                 /*картинки*/
-.navigation-user {
-    background-image: url("../img/index/search.svg");
-    background-repeat: no-repeat;
-}
 
-.chosen {
-    background-image: url("../img/index/favorites.svg");
-    background-repeat: no-repeat;
-}
 
 .house {
     background-image: url("../img/index/house.jpg");
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 .icon-house {
     background-image: url("../img/index/icon-house.svg");
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 89px;
 }
 
 .icon-eat {
     background-image: url("../img/index/icon-eat.svg");
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 91px;
 }
 
 .souvenir {
     background-image: url("../img/index/icon-souvenir.svg");
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 85px;
 }
 
 .canyon {
@@ -895,21 +965,6 @@ ul, ol {
 
 .background-footer {
     background-image: url("../img/index/background-footer.jpg");
-    background-repeat: no-repeat;
-}
-
-.twitter{
-    background-image: url("../img/index/social-twitter.svg");
-    background-repeat: no-repeat;
-}
-
-.facebook {
-    background-image: url("../img/index/social-facebook.svg");
-    background-repeat: no-repeat;
-}
-
-.youtube {
-    background-image: url("../img/index/social-youtube.svg");
     background-repeat: no-repeat;
 }
 
