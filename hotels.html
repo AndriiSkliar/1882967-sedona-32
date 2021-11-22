@@ -78,6 +78,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                       <span class="control-mark"></span>
+                      <img class="check" draggable="false" src="img/hotels/check.svg" width="12" height="10" alt="галочка">
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
@@ -85,6 +86,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                       <span class="control-mark"></span>
+                      <img class="check" draggable="false" src="img/hotels/check.svg" width="12" height="10" alt="галочка">
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
@@ -92,6 +94,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                       <span class="control-mark"></span>
+                      <img class="check" draggable="false" src="img/hotels/check.svg" width="12" height="10" alt="галочка">
                       <span class="control-label">Wi-Fi</span>
                     </label>  
                   </li>
@@ -103,21 +106,21 @@
                   <li class="comfort-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="shaving-supplies" checked>
-                      <span class="control-mark"></span>
+                      <span class="control-mark-circle"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="comfort-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="shaving-supplies">
-                      <span class="control-mark"></span>
+                      <span class="control-mark-circle"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="comfort-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="shaving-supplies">
-                      <span class="control-mark"></span>
+                      <span class="control-mark-circle"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
@@ -125,19 +128,25 @@
               </fieldset>
               <fieldset class="comfort-filter-group">
                 <legend class="comfort-filter-title">Стоимость, ₽:</legend>
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
                 <div class="comfort-border">
                   <label class="comfort-filter-label">
-                    <input class="comfort-filter-input" type="number" name="min-price">от 
+                    <input class="comfort-filter-input" type="number" name="min-price" value="0">
+                    <span class="comfort-filter-from">от</span>
                   </label>
                   <label class="comfort-filter-label">
-                    <input class="comfort-filter-input" type="number" name="max-price">до 
+                    <input class="comfort-filter-input" type="number" name="max-price" value="9000">
+                    <span class="comfort-filter-before">до</span> 
                   </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 227px;">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
               </fieldset>
               <div class="filter-right-column">
