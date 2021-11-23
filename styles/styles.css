@@ -31,12 +31,6 @@ body {
     background-color: #F2F2F2;
 }
 
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -190,6 +184,7 @@ ul, ol {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .main-container {
@@ -308,6 +303,7 @@ ul, ol {
 .advantages-container {
     display: grid;
     grid-template-columns: repeat(3, 400px);
+    background-color: #fff;
 }
 
 .canyon .cornflowerblue-color {
@@ -319,6 +315,7 @@ ul, ol {
 .advantage-container {
     display: grid;
     grid-template-columns: repeat(3, 400px);
+    background-color: #fff;
 }
 
 .advantage-item {
@@ -348,6 +345,7 @@ ul, ol {
     font-weight: 400;
     text-transform: none;
     margin-bottom: 90px;
+    margin-top: 0;
 }
 
 .advantages-list {
@@ -357,6 +355,13 @@ ul, ol {
     text-align: center;
     text-transform: uppercase;
     color: #333333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-list ul {
+    padding-left: 0;
 }
 
 .advantages-title {
@@ -364,16 +369,12 @@ ul, ol {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin-top: 0;
 }
 
 .advantages-item {
     background-color: rgba(131, 179, 211, 0.12);
     width: 400px;
-}
-
-.advantages-item h3,p {
-    margin: 0;
-    padding: 0;
 }
 
 .cornflowerblue-color {
@@ -395,6 +396,7 @@ ul, ol {
 
 .advantages-icon {
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .advantages-description {
@@ -404,6 +406,8 @@ ul, ol {
     text-transform: none;
     width: 250px;
     height: 73px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .white-color {
@@ -466,6 +470,7 @@ ul, ol {
 
 .search p:first-child {
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .date-of-travel {
@@ -475,6 +480,7 @@ ul, ol {
     color: #333333;
     text-transform: none;
     margin-bottom: 59px;
+    margin-top: 0;
 }
 
 .hotel-search {
@@ -640,6 +646,9 @@ ul, ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-social-link {
@@ -808,12 +817,15 @@ ul, ol {
     padding-top: 36px;
     padding-left: 64px;
     padding-right: 72px;
-    padding-bottom: 68px;
+    padding-bottom: 65px;
 }
 
 .nav {
     display: flex;
     margin-bottom: 45px;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
 }
 
 .nav-item {
@@ -918,6 +930,12 @@ ul, ol {
 .comfort-filter-title {
     margin-bottom: 31px;
     padding: 0;
+}
+
+.comfort-filter-list {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
 }
 
 .comfort-filter-item:first-child {
@@ -1211,6 +1229,12 @@ ul, ol {
     padding-right: 72px;
 }
 
+.hotels-card {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 .catalog-info {
     background-color: #FFFFFF;
     color: #000000;
@@ -1236,6 +1260,12 @@ ul, ol {
 
 .catalog-right-column {
     width: 20%;
+}
+
+.all-box {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .card-grid-toggle {
@@ -1643,6 +1673,9 @@ ul, ol {
 
 .pagination {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 .pagination-item {
