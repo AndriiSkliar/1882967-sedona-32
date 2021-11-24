@@ -546,11 +546,7 @@ body {
 
 .newsletter-form {
     margin-bottom: 94px;
-}
-
-.newsletter-email {
     display: flex;
-    margin: 0;
 }
 
 .field {
@@ -839,8 +835,12 @@ body {
 
 .nav-item:first-child a {
     padding-right: 5px;
-    padding-left: 5px;
+    padding-left: 17px;
     border: 3px solid rgba(131, 179, 211, 0);
+    background-image: url("../img/hotels/home.svg");
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 4px;
 }
 
 .nav-item:last-child a {
