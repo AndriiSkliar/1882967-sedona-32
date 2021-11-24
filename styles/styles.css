@@ -841,6 +841,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: 5px;
     background-position-y: 4px;
+    max-width: 100%;
 }
 
 .nav-item:last-child a {
@@ -866,10 +867,6 @@ body {
 .nav-link {
     font-weight: normal;
     font-size: 16px;
-}
-
-.nav-link img {
-    max-width: 100%;
 }
 
 .nav-link:last-child {
@@ -1013,6 +1010,20 @@ body {
     padding-left: 39px;
 }
 
+.check {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    opacity: 0;
+    fill: #3F5E72;
+    width: 12px;
+    height: 10px;
+    max-width: 100%;
+    display: block;
+    margin: auto; 
+    pointer-events: none;
+}
+
 .control-mark {
     position: absolute;
     width: 20px;
@@ -1021,15 +1032,6 @@ body {
     left: 0;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.check {
-    position: absolute;
-    left: 4px;
-    top: 6px;
-    opacity: 0;
-    pointer-events: none;
-    max-width: 100%;
 }
 
 .control-input[type="checkbox"]:checked ~ .check {
@@ -1276,6 +1278,10 @@ body {
     height: 44px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
+}
+
+.window-type {
+    fill: #000000;
 }
 
 .card-grid-toggle-current {
