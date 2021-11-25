@@ -954,6 +954,289 @@ body {
     fill: #756257;
 }
 
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+  }
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 70px;
+    padding-top: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+
+.modal-search {
+    width: 575px;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 60px;
+    margin-left: -2px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 53px;
+    right: 71px;
+    width: 53px;
+    height: 53px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    border: none;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 90px 90px 90px 60px;
+}
+
+.search-field-group {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    align-items: stretch;
+    color: #000000;
+}
+
+.search-form-label {
+    padding-top: 5px;
+    width: 155px;
+}
+
+.arrival-date {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 155px 420px;
+    grid-template-rows: 50px 40px;
+}
+
+.form-label-calendar {
+    grid-column: 2/3;
+    position: relative;
+}
+
+.search-field {
+    font: inherit;
+    height: 50px;
+    width: 420px;
+    padding: 0;
+    padding-top: 0px;
+    padding-left: 19px;
+    margin: 0;
+    border: none;
+    background: #F2F2F2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.calendar-icon {
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    padding: 0;
+    background-image: url("../img/icon-calendar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.text-form-date {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 5px;
+}
+
+.text-check-in {
+    color: #FF5757;
+}
+
+.date-of-departure {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 155px 420px;
+    grid-template-rows: 50px 40px;
+}
+
+.search-form-guest {
+    grid-row: 3/4;
+    display: flex;
+}
+
+.form-label-info {
+    padding-top: 6px;
+}
+
+.modal-search-button {
+    grid-row: 4/5;
+    border: 0;
+    padding: 0;
+    background: #83B3D3;
+    border-radius: 10px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.field-adults {
+    display: flex;
+    margin-right: 56px;
+}
+
+.field-children {
+    display: flex;
+}
+
+.search-field-input {
+    display: flex;
+    align-items: start;
+    position: relative;
+}
+
+.toggle-minus,
+.toggle-plus {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.toggle-minus {
+    top: 16px;
+    left: 15px;
+    height: 19px;
+    width: 19px;
+    background-image: url("/img/icon-minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.toggle-plus {
+    right: 16px;
+    top: 15px;
+    height: 19px;
+    width: 19px;
+    background-image: url("/img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.guest-toggle .search-field {
+    width: 133px;
+    text-align: center;
+    margin-left: -2px;
+}
+
+.popover-search {
+    position: relative;
+    display: none;
+}
+
+.field-children {
+    position: relative;
+}
+
+.field-children .form-label-info {
+    width: 101px;
+}
+
+.info-icon {
+    background-image: url("../img/icon-more.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 56px;
+    background-color: #83B3D3;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 14px;
+    left: 56px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.text-info-children {
+    margin: 0;
+    position: absolute;
+    width: 256px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding-top: 19px;
+    padding-right: 18px;
+    padding-bottom: 24px;
+    padding-left: 22px;
+    background: #333333;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    top: 8px;
+    left: -59px;
+}
+
+.text-info-children::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background: #333333;
+    top: -7px;
+    right: 122px;
+}
+
+.modal-container-close {
+    display: none;
+}
+
 .main-inner {
     font-weight: bold;
     color: #FFFFFF;
