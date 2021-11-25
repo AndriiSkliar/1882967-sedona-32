@@ -1005,6 +1005,31 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    border: none;
+}
+
+.modal-close-button:hover {
+    background: #E6E6E6;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-close-button:focus {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-close-button:active {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
 }
 
 .search-form {
@@ -1040,13 +1065,17 @@ body {
     position: relative;
 }
 
+.arrival-date .search-field,
+.date-of-departure .search-field {
+    padding-left: 19px;
+}
+
 .search-field {
     font: inherit;
     height: 50px;
     width: 420px;
     padding: 0;
     padding-top: 0px;
-    padding-left: 19px;
     margin: 0;
     border: none;
     background: #F2F2F2;
@@ -1054,6 +1083,27 @@ body {
     box-sizing: border-box;
     cursor: pointer;
     appearance: none;
+}
+
+.arrival-date .search-field:hover,
+.date-of-departure .search-field:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.arrival-date .search-field:focus,
+.date-of-departure .search-field:focus {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+}
+
+.arrival-date .search-field:active,
+.date-of-departure .search-field:active {
+    outline: 2px solid #000000;
+    border-radius: 4px;
+    background: #FFFFFF;
+    outline-offset: -2px;
 }
 
 input::-webkit-outer-spin-button,
@@ -1074,6 +1124,10 @@ input::-webkit-inner-spin-button {
     background-position: center;
     opacity: 0.3;
     cursor: pointer;
+}
+
+.calendar-icon:focus {
+    outline: none;
 }
 
 .text-form-date {
@@ -1120,9 +1174,25 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+.modal-search-button:hover {
+    background: #68A2CA;
+}
+
+.modal-search-button:focus {
+    background: #68A2CA;
+    outline: 3px solid #756257;
+    border-radius: 10px;
+}
+
+.modal-search-button:active {
+    background: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
 .field-adults {
     display: flex;
-    margin-right: 56px;
+    margin-right: 54px;
 }
 
 .field-children {
@@ -1140,7 +1210,26 @@ input::-webkit-inner-spin-button {
     border: 0;
     padding: 0;
     position: absolute;
-    pointer-events: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.toggle-minus:hover,
+.toggle-plus:hover {
+    opacity: 1;
+}
+
+.toggle-minus:focus,
+.toggle-plus:focus {
+    opacity: 1;
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.toggle-minus:active,
+.toggle-plus:active {
+    opacity: 0.2;
+    outline: none;
 }
 
 .toggle-minus {
@@ -1168,7 +1257,10 @@ input::-webkit-inner-spin-button {
 .guest-toggle .search-field {
     width: 133px;
     text-align: center;
-    margin-left: -2px;
+}
+
+.guest-toggle .search-field:focus {
+    outline: none;
 }
 
 .popover-search {
@@ -1200,6 +1292,11 @@ input::-webkit-inner-spin-button {
     left: 56px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.info-icon:focus {
+    background: #68A2CA;
+    outline: none;
 }
 
 .text-info-children {
@@ -1234,7 +1331,6 @@ input::-webkit-inner-spin-button {
 }
 
 .modal-container-close {
-    display: none;
 }
 
 .main-inner {
