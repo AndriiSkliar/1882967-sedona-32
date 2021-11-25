@@ -197,11 +197,7 @@ body {
     display: block;
 }
 
-.navigation-user li {
-    margin-right: 1px;
-}
-
-.navigation-user li:nth-child(2) {
+.navigation-user .navigation-item:nth-child(2) {
     margin-right: 23px;
 }
 
@@ -265,6 +261,179 @@ body {
 .show-more:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #615048;
+}
+
+.popover {
+    width: 400px;
+    font-family: "PT Sans Narrow", sans-serif;
+    position: absolute;
+    top: 62px;
+    right: 72px;
+    z-index: 1;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    display: none;
+}
+
+.popover-open {
+    display: block;
+}
+
+.popover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 196px;
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
+    box-shadow: -1px -1px 0px #E4E4E4;
+    transform: rotate(45deg);
+}
+
+.popover-content {
+    min-height: 100%;
+    padding: 15px;
+    padding-bottom: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    min-height: 146px;
+    border: 1px solid #E6E6E6;
+    border-radius: 20px 20px 0 0;
+}
+
+.cart-items-list {
+    padding: 0;
+}
+
+.cart-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+}
+
+.cart-item-link {
+    display: grid;
+    grid-template-columns: 64px auto;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    max-width: 336px;
+}
+
+.cart-item-link:hover {
+    opacity: 0.6;
+}
+
+.button-delete:hover .delete-icon {
+    fill: #000000;
+}
+
+.cart-item-link:focus {
+    outline: 3px solid #83B3D3;
+    border-radius: 10px;
+}
+
+.button-delete:focus .delete-icon {
+    fill: #000000;
+}
+
+.button-delete:focus {
+    outline: 3px solid #83B3D3;
+    border-radius: 10px;
+    outline-offset: -3px;
+}
+
+.cart-item-link:active {
+    outline: none;
+    opacity: 0.3;
+}
+
+.button-delete:active .delete-icon {
+    outline: none;
+    opacity: 0.1;
+}
+
+.cart-item-image {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-width: 100%;
+}
+
+.cart-item-title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+    color: #000000;
+}
+
+.cart-item-type {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    color: #333333;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0;
+    margin-top: -8px;
+}
+
+.button-delete {
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+    height: 36px;
+    position: absolute;
+    right: -1px;
+    top: 6px;
+}
+
+.delete-icon {
+    fill: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button-all-favorites {
+    color: #FFFFFF;
+    border: none;
+    padding: 19px 0;
+    width: 400px;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #756257;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.button-all-favorites:hover {
+    background: #615048;
+}
+
+.button-all-favorites:focus {
+    background: #615048;
+    outline: 3px solid #83B3D3;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.button-all-favorites:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .acquaintance {
@@ -812,8 +981,9 @@ body {
     background-repeat: no-repeat;
     padding-top: 36px;
     padding-left: 64px;
-    padding-right: 72px;
+    padding-right: 71px;
     padding-bottom: 65px;
+    background-size: cover;
 }
 
 .nav {
@@ -892,30 +1062,32 @@ body {
 .comfort-filter {
     display: flex;
     padding-left: 8px;
+    flex-wrap: wrap;
 }
 
 .comfort-filter-group {
     margin: 0;
+    margin-right: 20px;
     border: 0;
     padding: 0;
 }
 
-.comfort-filter-group:first-child {
+.infrastructure {
     margin-right: 68px;
     max-width: 167px;
 }
 
-.comfort-filter-group:nth-child(2) {
+.lodging {
     margin-right: 127px;
     max-width: 167px;
 }
 
-.comfort-filter-group:nth-child(3) {
+.price {
     margin-right: 82px;
     padding-left: 41px;
 }
 
-.comfort-filter-group:nth-child(3) .comfort-filter-title {
+.price .comfort-filter-title {
     margin-bottom: 35px;
 }
 
@@ -1322,7 +1494,7 @@ body {
     display: flex;
     margin: 0 auto;
     padding-top: 19px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     border-top: 1px solid #E6E6E6;
 }
 
@@ -1333,7 +1505,6 @@ body {
 .divider {
     display: grid;
     grid-template-columns: 180px 24px 159px 160px 373px;
-    grid-template-rows: 45px 54px 47px;
 }
 
 .hotels-card-link {
@@ -1484,10 +1655,11 @@ body {
 .catalog-grid {
     display: grid;
     grid-template-columns: 151px 160px ;
-    grid-template-rows: 55px 37px;
+    grid-template-rows: 55px auto;
     column-gap: 8px;
     margin-top: -6px;
     padding-left: 12px;
+    align-items: start;
 }
 
 .more-details {
@@ -1498,9 +1670,9 @@ body {
     background-color: #756257;
     border-radius: 4px;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .more-details:hover {
@@ -1528,10 +1700,11 @@ body {
     color: #FFFFFF;
     background-color: #83B3D3;
     border-radius: 4px;
-    display: block;
-    padding: 0;
+    display: inline-block;
     border: 0;
     cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 9px;
 }
 
 .favorites:hover {
@@ -1580,8 +1753,9 @@ body {
     color: #FFFFFF;
     background-color: #7DB54F;
     border-radius: 4px;
-    display: block;
-    padding: 0;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border: 0;
 }
 
@@ -1678,10 +1852,12 @@ body {
 }
 
 .pagination {
-    display: flex;
     list-style: none;
     margin: 0;
     padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-gap: 8px;
 }
 
 .pagination-item {
@@ -1690,7 +1866,6 @@ body {
     text-transform: uppercase;
     background-color: #83B3D3;
     border-radius: 4px;
-    margin-right: 7.9px;
 }
 
 .pagination-link {
